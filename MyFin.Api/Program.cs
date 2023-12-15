@@ -10,7 +10,7 @@ string connection = builder.Configuration.GetConnectionString("MyFin") ??
                     throw new Exception("string de conexão não encontrada.");
 
 builder.Services.AddDbContext<MyFinDbContext>(options =>
-                options.UseSqlite(connection));
+                options.UseSqlite(connection, migration => migration.MigrationsAssembly("MyFin.Presentation")));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

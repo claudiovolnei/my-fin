@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyFin.Application\MyFin.Application.csproj" />
+    <ProjectReference Include="..\MyFin.Domain.Services\MyFin.Domain.Services.csproj" />
+  </ItemGroup>
+
 </Project>

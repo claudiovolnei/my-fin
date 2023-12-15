@@ -8,11 +8,17 @@ namespace MyFin.Infrastructure.Data
         public MyFinDbContext()
         {
         }
-
-        public MyFinDbContext(DbContextOptions<MyFinDbContext> options) : base(options) { }
+        public MyFinDbContext(DbContextOptions<DbContext> options) : base(options) {  }
 
         public DbSet<TransactionOrder> TransactionOrders { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if(!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlite(MyFinConnection.GetConnectionString());
+            }            
+        }
 
         public override int SaveChanges()
         {
