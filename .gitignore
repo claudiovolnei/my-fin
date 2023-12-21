@@ -7,7 +7,7 @@
 .env
 
 #banco sqlite
-.db
+*.db
 
 # User-specific files
 *.rsuser
