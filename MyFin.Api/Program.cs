@@ -12,6 +12,8 @@ string connection = builder.Configuration.GetConnectionString("MyFin") ??
 builder.Services.AddDbContext<MyFinDbContext>(options =>
                 options.UseSqlite(connection, migration => migration.MigrationsAssembly("MyFin.Presentation")));
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

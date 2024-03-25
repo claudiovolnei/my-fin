@@ -6,11 +6,11 @@ using MyFin.Domain.Models;
 
 namespace MyFin.Application.Service
 {
-    public class ApplicationServiceTransactionOrder : IApplicationServiceTransactionOrder
+    public class TransactionOrderApplicationService : ITransactionOrderApplicationService
     {
-        private readonly IServiceTransactionOrder _serviceTransactionOrder;
+        private readonly ITransactionOrderService _serviceTransactionOrder;
         private readonly IMapper _mapper;
-        public ApplicationServiceTransactionOrder(IServiceTransactionOrder serviceTransactionOrder, IMapper mapper)
+        public TransactionOrderApplicationService(ITransactionOrderService serviceTransactionOrder, IMapper mapper)
         {
             _serviceTransactionOrder = serviceTransactionOrder;
             _mapper = mapper; 

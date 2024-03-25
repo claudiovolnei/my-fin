@@ -4,11 +4,11 @@ using MyFin.Infrastructure.Data;
 
 namespace MyFin.Infrastructure.Repository.Repositorys
 {
-    public abstract class RepositoryBase<TEntity> : IDisposable, IRepositoryBase<TEntity> where TEntity : class
+    public abstract class BaseRepository<TEntity> : IDisposable, IBaseRepository<TEntity> where TEntity : class
     {
         private readonly MyFinDbContext _context;
 
-        public RepositoryBase(MyFinDbContext Context)
+        public BaseRepository(MyFinDbContext Context)
         {
             _context = Context;
         }

@@ -2,7 +2,7 @@
 
 namespace MyFin.Application.Interfaces
 {
-    public interface IApplicationServiceTransactionOrder
+    public interface ITransactionOrderApplicationService
     {
         void Add(TransactionOrderDTO transactionOrderDTO);
 

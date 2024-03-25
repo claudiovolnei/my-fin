@@ -1,6 +1,6 @@
 ﻿namespace MyFin.Domain.Core.Interfaces.Repositorys
 {
-    public interface IRepositoryBase<TEntity> where TEntity : class
+    public interface IBaseRepository<TEntity> where TEntity : class
     {
         void Add(TEntity obj);
 

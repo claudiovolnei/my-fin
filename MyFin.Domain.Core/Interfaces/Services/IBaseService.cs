@@ -1,6 +1,6 @@
 ﻿namespace MyFin.Domain.Core.Interfaces.Services
 {
-    public interface IServiceBase<TEntity> where TEntity : class
+    public interface IBaseService<TEntity> where TEntity : class
     {
         void Add(TEntity obj);
 

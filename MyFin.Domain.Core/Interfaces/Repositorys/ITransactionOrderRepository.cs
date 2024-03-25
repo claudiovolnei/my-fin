@@ -2,7 +2,7 @@
 
 namespace MyFin.Domain.Core.Interfaces.Repositorys
 {
-    public interface IRepositoryTransactionOrder : IRepositoryBase<TransactionOrder>
+    public interface ITransactionOrderRepository : IBaseRepository<TransactionOrder>
     {
     }
 }

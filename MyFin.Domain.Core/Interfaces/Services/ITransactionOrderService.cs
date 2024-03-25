@@ -2,7 +2,7 @@
 
 namespace MyFin.Domain.Core.Interfaces.Services
 {
-    public interface IServiceTransactionOrder : IServiceBase<TransactionOrder>
+    public interface ITransactionOrderService : IBaseService<TransactionOrder>
     {
     }
 }

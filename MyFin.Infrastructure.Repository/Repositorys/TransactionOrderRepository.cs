@@ -4,10 +4,10 @@ using MyFin.Infrastructure.Data;
 
 namespace MyFin.Infrastructure.Repository.Repositorys
 {
-    public class RepositoryTransactionOrder : RepositoryBase<TransactionOrder>, IRepositoryTransactionOrder
+    public class TransactionOrderRepository : BaseRepository<TransactionOrder>, ITransactionOrderRepository
     {
         private readonly MyFinDbContext _myFinDbContext;
-        public RepositoryTransactionOrder(MyFinDbContext myFinDbContext) : base(myFinDbContext) 
+        public TransactionOrderRepository(MyFinDbContext myFinDbContext) : base(myFinDbContext) 
         {
             _myFinDbContext = myFinDbContext;
         }
