@@ -13,7 +13,7 @@ namespace MyFin.Infrastructure.Data
             builder.AddJsonFile(Path.Combine($"{nameDirectory}\\MyFin.Api", "appsettings.json"));
 
             var root = builder.Build();
-            return root.GetConnectionString("MyFin") ?? throw new ArgumentException("ConnectionString.Failed");
+            return root.GetConnectionString("MyFin_Postgres") ?? throw new ArgumentException("ConnectionString.Failed");
     
         }
     }

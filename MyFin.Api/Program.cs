@@ -6,11 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 ConfigurationIOC.Load(builder.Services);
 
-string connection = builder.Configuration.GetConnectionString("MyFin") ??
+string connection = builder.Configuration.GetConnectionString("MyFin_Postgres") ??
                     throw new Exception("string de conexão não encontrada.");
 
+//builder.Services.AddDbContext<MyFinDbContext>(options =>
+//                options.UseSqlite(connection, migration => migration.MigrationsAssembly("MyFin.Presentation")));
+
 builder.Services.AddDbContext<MyFinDbContext>(options =>
-                options.UseSqlite(connection, migration => migration.MigrationsAssembly("MyFin.Presentation")));
+                options.UseNpgsql(connection, migration => migration.MigrationsAssembly("MyFin.Presentation")));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

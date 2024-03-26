@@ -16,7 +16,8 @@ namespace MyFin.Infrastructure.Data
         {
             if(!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite(MyFinConnection.GetConnectionString());
+                //optionsBuilder.UseSqlite(MyFinConnection.GetConnectionString());
+                optionsBuilder.UseNpgsql(MyFinConnection.GetConnectionString());
             }            
         }
 
