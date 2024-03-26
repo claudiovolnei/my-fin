@@ -11,31 +11,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.0 - Domain", "3.0 - Domai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.0 - Infrastructure", "4.0 - Infrastructure", "{9F435BDB-105A-4394-8BC8-877CFF42A1B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Domain", "MyFin.Domain\MyFin.Domain.csproj", "{DB0BEF6E-4707-49A6-AD5C-FCC1AD19E5CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Domain", "MyFin.Domain\MyFin.Domain.csproj", "{DB0BEF6E-4707-49A6-AD5C-FCC1AD19E5CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Domain.Core", "MyFin.Domain.Core\MyFin.Domain.Core.csproj", "{296F956E-DF47-4AC0-A112-04A90EA4FA3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Domain.Core", "MyFin.Domain.Core\MyFin.Domain.Core.csproj", "{296F956E-DF47-4AC0-A112-04A90EA4FA3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Domain.Services", "MyFin.Domain.Services\MyFin.Domain.Services.csproj", "{18349E48-EE43-4261-A39C-8BA76CFFE127}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Domain.Services", "MyFin.Domain.Services\MyFin.Domain.Services.csproj", "{18349E48-EE43-4261-A39C-8BA76CFFE127}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Application.DTO", "MyFin.Application.DTO\MyFin.Application.DTO.csproj", "{AF0AE6A2-E7A9-416E-BA67-6D1B05783BC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Application.DTO", "MyFin.Application.DTO\MyFin.Application.DTO.csproj", "{AF0AE6A2-E7A9-416E-BA67-6D1B05783BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Application", "MyFin.Application\MyFin.Application.csproj", "{4D91DD5F-C7D3-403C-8F16-F63F281EE937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Application", "MyFin.Application\MyFin.Application.csproj", "{4D91DD5F-C7D3-403C-8F16-F63F281EE937}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{2A7ADA02-D9FE-4E64-A89C-E61A1A4DC9BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Infrastructure.Data", "MyFin.Infrastructure.Data\MyFin.Infrastructure.Data.csproj", "{6D09249D-0E51-42DF-9191-B30C2197372A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Infrastructure.Data", "MyFin.Infrastructure.Data\MyFin.Infrastructure.Data.csproj", "{6D09249D-0E51-42DF-9191-B30C2197372A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Infrastructure.Repository", "MyFin.Infrastructure.Repository\MyFin.Infrastructure.Repository.csproj", "{BD30B34D-1EA5-482F-958A-8E0F20B415EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Infrastructure.Repository", "MyFin.Infrastructure.Repository\MyFin.Infrastructure.Repository.csproj", "{BD30B34D-1EA5-482F-958A-8E0F20B415EB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{469FADD7-DDE4-4920-B84D-B55E52F56C89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Infrastructure.CrossCutting.IOC", "MyFin.Infrastructure.CrossCutting.IOC\MyFin.Infrastructure.CrossCutting.IOC.csproj", "{BC35BD17-7F26-4323-A7CF-ADB969B541DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Infrastructure.CrossCutting.IOC", "MyFin.Infrastructure.CrossCutting.IOC\MyFin.Infrastructure.CrossCutting.IOC.csproj", "{BC35BD17-7F26-4323-A7CF-ADB969B541DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFin.Api", "MyFin.Api\MyFin.Api.csproj", "{754EFB32-840C-43ED-A2B4-4699287E3162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFin.Api", "MyFin.Api\MyFin.Api.csproj", "{754EFB32-840C-43ED-A2B4-4699287E3162}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC4F97E6-BD6B-46D2-988F-AF02F8FBAD30}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{2301999F-CB25-4AE7-9AFA-E7DC42DD414E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "worflows", "worflows", "{F14DD188-1820-416B-A946-6296266D205B}"
+	ProjectSection(SolutionItems) = preProject
+		main.yml = main.yml
 	EndProjectSection
 EndProject
 Global
@@ -96,6 +103,7 @@ Global
 		{469FADD7-DDE4-4920-B84D-B55E52F56C89} = {9F435BDB-105A-4394-8BC8-877CFF42A1B3}
 		{BC35BD17-7F26-4323-A7CF-ADB969B541DB} = {469FADD7-DDE4-4920-B84D-B55E52F56C89}
 		{754EFB32-840C-43ED-A2B4-4699287E3162} = {23ACC1C7-AC8F-437B-BEF6-69B3FB275833}
+		{F14DD188-1820-416B-A946-6296266D205B} = {2301999F-CB25-4AE7-9AFA-E7DC42DD414E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3568335C-527E-4F06-B53E-6A7090673A77}
